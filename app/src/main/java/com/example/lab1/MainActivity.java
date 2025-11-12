@@ -1,16 +1,21 @@
 package com.example.lab1;
 
+import android.icu.util.Output;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,15 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void disable(View v){
-        Button button = (Button) v;
-        button.setText("Disabled");
-        Log.d("succes","Button disable");
-    }
-    public void textCh(View view){
-        TextView tx = findViewById(R.id.texts);
-        tx.setText("Text Changed");
+  public void result(View view) {
+      EditText ins = findViewById(R.id.source);
+      String text = ins.getText().toString();
+      ((TextView) findViewById(R.id.textView2)).setText("mame is :" + text);
+      Toast.makeText(this, "mame is :" + text, Toast.LENGTH_SHORT).show();
 
+  }
 
     }
-}
+
