@@ -1,0 +1,11 @@
+<resources>
+    <!-- Define your custom style -->
+    <style name="MyCommonStyle">
+        <item name="android:textColor">#FF5722</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#FFE0B2</item>
+        <item name="android:alpha">0.3</item>
+
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+
+
+<resources>
+    <!-- Custom style for TextView -->
+    <style name="Label">
+        <item name="android:textColor">#FFFF00</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:borderlessButtonStyle">false</item>
+
+
+    </style>
+</resources>

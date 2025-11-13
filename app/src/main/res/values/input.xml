@@ -1,0 +1,8 @@
+<resources>
+    <style  name="Inputs">
+        <item name="android:background">#ffffff</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+</resources>

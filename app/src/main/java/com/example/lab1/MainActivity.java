@@ -25,13 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-  public void result(View view) {
-      EditText ins = findViewById(R.id.source);
-      String text = ins.getText().toString();
-      ((TextView) findViewById(R.id.textView2)).setText("mame is :" + text);
-      Toast.makeText(this, "mame is :" + text, Toast.LENGTH_SHORT).show();
-
-  }
 
     }
 
