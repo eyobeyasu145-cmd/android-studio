@@ -1,21 +1,14 @@
 package com.example.lab1;
 
-import android.icu.util.Output;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +16,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-    }
 
+
+      public void setting(View v){
+          Intent i = new Intent(this,SettingsActivity2.class);
+            startActivity(i);
+
+      }
+
+    }
+//  // Change background color
+//    ts.setBackgroundColor(Color.parseColor("#FFC107")); // Amber yellow
+//
+//    // Optional: change text color too
+//    ts.setTextColor(Color.WHITE);
+//
+//    // Add animation (your existing one)
+//    ts.animate().scaleX(2).scaleY(2).setDuration(2000);
