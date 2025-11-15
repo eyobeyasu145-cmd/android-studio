@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A66767"
+    tools:context=".wecome">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="548dp"
+        android:background="#4CAF50"
+        android:text="Wellcome"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="324dp"
+        android:background="#EF1010"
+        android:text="Wellcome"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_green_dark"
+        app:title="Login Page" />
+</androidx.constraintlayout.widget.ConstraintLayout>

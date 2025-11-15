@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">lab1</string>
+    <string name="app_name">Log In page</string>
     <string name="welcame_to_marketing_major_field">Welcame to marketing major field</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="app_names">My App Title</string>
 </resources>
