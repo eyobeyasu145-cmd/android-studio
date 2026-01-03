@@ -1,7 +1,9 @@
 package com.example.joblist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,7 +13,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button btnSignUp;
+    TextView tvLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,5 +26,22 @@ public class MainActivity extends AppCompatActivity {
 
         textView.setText(Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY));
 
+
+
+        btnSignUp = findViewById(R.id.btnSignUp);
+        tvLogin = findViewById(R.id.tvLogin);
+
+        btnSignUp.setOnClickListener(v -> {
+            // Go to SignUp Activity
+            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+            startActivity(intent);
+        });
+
+        tvLogin.setOnClickListener(v -> {
+            // Go to Login Activity
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        });
     }
+
 }
