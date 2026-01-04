@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,12 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignUp = findViewById(R.id.btnSignUp);
         tvLogin = findViewById(R.id.tvLogin);
-
         btnSignUp.setOnClickListener(v -> {
-            // Go to SignUp Activity
-            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
-            startActivity(intent);
+            try {
+                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            } catch (Exception e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
         });
+
 
         tvLogin.setOnClickListener(v -> {
             // Go to Login Activity

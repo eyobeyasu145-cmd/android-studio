@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+<!-- ================= PRIMARY BRAND COLORS ================= -->
+<color name="primary">#1029AF</color>          <!-- Main brand blue -->
+<color name="primary_dark">#0C1F85</color>
+<color name="primary_light">#4D63E6</color>
+
+<color name="secondary">#EFD650</color>        <!-- Complementary yellow -->
+<color name="secondary_dark">#C9B43A</color>
+<color name="secondary_light">#FFF2A8</color>
+
+<!-- ================= BASIC COLORS ================= -->
+<color name="white">#FFFFFF</color>
+<color name="black">#000000</color>
+<color name="gray">#9E9E9E</color>
+<color name="light_gray">#E0E0E0</color>
+<color name="dark_gray">#616161</color>
+<color name="overlay_dark">#80000000</color>  <!-- 50% black -->
+
+<!-- ================= TEXT COLORS ================= -->
+<color name="text_primary">#212121</color>
+<color name="text_secondary">#757575</color>
+<color name="text_hint">#9E9E9E</color>
+<color name="text_white">#FFFFFF</color>
+
+<!-- ================= BACKGROUND COLORS ================= -->
+<color name="bg_main">#F8F9FB</color>
+<color name="bg_card">#FFFFFF</color>
+<color name="bg_input">#FAFAFA</color>
+
+<!-- ================= STATUS COLORS ================= -->
+<color name="success">#4CAF50</color>
+<color name="error">#F44336</color>
+<color name="warning">#FF9800</color>
+<color name="info">#2196F3</color>
+
+<!-- ================= BUTTON COLORS ================= -->
+<color name="btn_primary">#1029AF</color>
+<color name="btn_secondary">#EFD650</color>
+<color name="btn_disabled">#BDBDBD</color>
+
+<!-- ================= OPACITY (ALPHA) COLORS ================= -->
+<!-- Format: #AARRGGBB -->
+
+<!-- Black with opacity -->
+<color name="black_90">#E6000000</color>
+<color name="black_70">#B3000000</color>
+<color name="black_50">#80000000</color>
+<color name="black_30">#4D000000</color>
+<color name="black_10">#1A000000</color>
+
+<!-- White with opacity -->
+<color name="white_90">#E6FFFFFF</color>
+<color name="white_70">#B3FFFFFF</color>
+<color name="white_50">#80FFFFFF</color>
+<color name="white_30">#4DFFFFFF</color>
+<color name="white_10">#1AFFFFFF</color>
+
+<!-- Primary color with opacity -->
+<color name="primary_80">#CC1029AF</color>
+<color name="primary_60">#991029AF</color>
+<color name="primary_40">#661029AF</color>
+<color name="primary_20">#331029AF</color>
+
+<!-- Error with opacity -->
+<color name="error_20">#33F44336</color>
+
 </resources>
